@@ -1,15 +1,15 @@
-if () {
-
-} else if () {
-
-} else {
-  
-}
 
 
 $(document).ready(function() {
-  $(form#learning-preferences).submit(function(event) {
+  $("form#learningPreferences").submit(function(event) {
     event.preventDefault();
+    //
+    var userName = $("input#name").val();
+    // // var frontEndBackEnd = parseInt($("#frontEndBackEnd").val());
+    //
+    $(".userName").append(userName);
+    $("#surveyComplete").show();
+
 
   });
 });

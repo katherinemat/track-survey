@@ -11,30 +11,29 @@
     <h1 class="jumbotron">Course Direction Survey</h1>
     <div id="survey">
       <p>Take the following survey to find out which Epicodus track to take. We've all completed Intro to Programming. Now it's time to get specific!</p>
-      <form id="learning-preferences">
+      <form id="learningPreferences">
 
         <div class="form-group">
           <label for="name">What's your name?</label>
           <input id="name" class="form-control" type="text">
         </div>
 
-        <div class="form-group">
-          <label for="companyType">What size company do you see yourself working at in five years</label>
-          <select class="form-control" id="companyType">
-            <option value="1">International Corporation</option>
-            <option value="2">sfsfd</option>
-            <option value="3">Local Business</option>
-            <option value="4">Small Startup</option>
-            <option value="5">I see myself starting my own company</option>
+        <!-- <div class="form-group">
+          <label for="companyType">Are you more interested in front-end design or back-end development?</label>
+          <select class="form-control" id="frontEndBackEnd">
+            <option value="1">Front-end design</option>
+            <option value="2">Back-end development</option>
           </select>
-        </div>
+        </div> -->
 
         <button type="submit" class="btn">Submit</button>
       </form>
     </div>
 
-    <div id="results">
-      <p>Congratulations, <span class="userName"></span>! You're most suited to join the <span class="trackResult"></span> track.</p>
+    <div class="results">
+      <div id="surveyComplete">
+        <p>Congratulations, <span class="userName"></span>! You're most suited to join the <span class="trackResult"></span> track.</p>
+      </div>
 
       <div id="rubyRails">
         <h3>Ruby/Rails</h3>

@@ -1,3 +1,23 @@
-/*#results {
+.results #surveyComplete {
   display: none;
-}*/
+}
+
+#rubyRails {
+  display: none;
+}
+
+#phpDrupal {
+  display: none;
+}
+
+#javaAndroid {
+  display: none;
+}
+
+#cssDesign {
+  display: none;
+}
+
+#cNet {
+  display: none;
+}
