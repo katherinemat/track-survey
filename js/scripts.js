@@ -25,7 +25,9 @@ $(document).ready(function() {
     $(".userName").append(userName);
     $("#surveyComplete").show();
 
-    if (introCompleteVal < 1) {
+    if (!userName) {
+      $("body").addClass("error");
+    } else if (introCompleteVal < 1) {
       $("#introToProgramming").show();
     } else if (frontEndBackEndVal < 1) {
       $("#cssDesign").show();
@@ -41,7 +43,7 @@ $(document).ready(function() {
       $("#mystery").show();
     }
 
-    
+
 
   });
 });

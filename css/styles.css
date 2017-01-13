@@ -1,3 +1,11 @@
 .results #surveyComplete, #introToProgramming, #rubyRails, #phpDrupal, #javaAndroid, #cssDesign, #cNet, #mystery {
   display: none;
 }
+
+.completed {
+  background-color: rgba(0,255,97,0.5);
+}
+
+.error {
+  background-color: rgba(255, 16, 0, 0.5);
+}

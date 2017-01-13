@@ -12,94 +12,105 @@
     <div id="survey">
       <p>You've starting learning programming and now you're wondering which direction to focus your studies? Take the following survey to find out which Epicodus track to take. Answer these questions truthfully to get the best result. Change your answers around to see what direction the quiz takes you in!</p>
       <form id="learningPreferences">
-
-        <div class="form-group">
-          <label for="name">What's your name?</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-
-        <div class="form-group">
-          <label for="introComplete">Have you finished or are you currently enrolled in the Intro to Programming course offered by Epicodus?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="introComplete" value="0">
-              No
-            </label>
-          </div>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="introComplete" value="1">
-              Yes
-            </label>
+        <div class="question1">
+          <div class="form-group">
+            <label for="name">What's your name?</label>
+            <input id="name" class="form-control" type="text">
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="frontEndBackEnd">Are you more interested in front-end design or back-end development?</label>
-          <select class="form-control" id="frontEndBackEnd">
-            <option value="3">Choose one</option>
-            <option value="0">Front-end design</option>
-            <option value="1">Back-end development</option>
-            <option value="2">Doesn't matter too much to me</option>
-          </select>
-        </div>
+        <div class="question2">
+          <div class="form-group">
+            <label for="introComplete">Have you finished or are you currently enrolled in the Intro to Programming course offered by Epicodus?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="introComplete" value="0">
+                No
+              </label>
+            </div>
 
-        <div class="form-group">
-          <label for="typeCompany">What type of company do you want to work for?</label>
-          <select class="form-control" id="typeCompany">
-            <option value="3">Choose one</option>
-            <option value="0">Smaller start-up</option>
-            <option value="1">Established coorporation</option>
-            <option value="2">Doesn't matter too much to me</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="contentType">Would you rather work on website content or applications?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="contentType" value="0">
-              Website content
-            </label>
-          </div>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="contentType" value="1">
-              Applications
-            </label>
-          </div>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="contentType" value="2">
-              Doesn't matter too much to me
-            </label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="introComplete" value="1">
+                Yes
+              </label>
+            </div>
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="applicationType">Which sounds more fun: designing a mobile app or organizing a database?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="applicationType" value="0">
-              Designing a mobile app
-            </label>
+        <div class="question3">
+          <div class="form-group">
+            <label for="frontEndBackEnd">Are you more interested in front-end design or back-end development?</label>
+            <select class="form-control" id="frontEndBackEnd">
+              <option value="3">Choose one</option>
+              <option value="0">Front-end design</option>
+              <option value="1">Back-end development</option>
+              <option value="2">Doesn't matter too much to me</option>
+            </select>
           </div>
+        </div>
 
-          <div class="radio">
-            <label>
-              <input type="radio" name="applicationType" value="1">
-              Organizing a database
-            </label>
+        <div class="question4">
+          <div class="form-group">
+            <label for="typeCompany">What type of company do you want to work for?</label>
+            <select class="form-control" id="typeCompany">
+              <option value="3">Choose one</option>
+              <option value="0">Smaller start-up</option>
+              <option value="1">Established coorporation</option>
+              <option value="2">Doesn't matter too much to me</option>
+            </select>
           </div>
+        </div>
 
-          <div class="radio">
-            <label>
-              <input type="radio" name="applicationType" value="2">
-              Doesn't matter too much to me
-            </label>
+        <div class="question5">
+          <div class="form-group">
+            <label for="contentType">Would you rather work on website content or applications?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="contentType" value="0">
+                Website content
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="contentType" value="1">
+                Applications
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="contentType" value="2">
+                Doesn't matter too much to me
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question6">
+          <div class="form-group">
+            <label for="applicationType">Which sounds more fun: designing a mobile app or organizing a database?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="applicationType" value="0">
+                Designing a mobile app
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="applicationType" value="1">
+                Organizing a database
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="applicationType" value="2">
+                Doesn't matter too much to me
+              </label>
+            </div>
           </div>
         </div>
 
