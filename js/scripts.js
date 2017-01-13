@@ -1,7 +1,15 @@
 $(document).ready(function() {
   $("form#learningPreferences").submit(function(event) {
     event.preventDefault();
-    // $(".results").hide();
+    // How do I combine all the following hide methods into one line of code? $(".results").hide(); does not work
+    $("#surveyComplete").hide();
+    $("#introToProgramming").hide();
+    $("#cssDesign").hide();
+    $("#rubyRails").hide();
+    $("#phpDrupal").hide();
+    $("#javaAndroid").hide();
+    $("#cNet").hide();
+    $("#mystery").hide();
 
     var userName = $("input#name").val();
 
