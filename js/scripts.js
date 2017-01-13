@@ -12,12 +12,10 @@ $(document).ready(function() {
     $("#mystery").hide();
 
     var userName = $("input#name").val();
-    // var frontEndBackEndText = $("#frontEndBackEnd option:selected").text();
-    // alert(frontEndBackEndText);
+    var frontEndBackEndText = $("#frontEndBackEnd option:selected").text();
     var introCompleteVal = parseInt($("input:radio[name=introComplete]:checked").val());
     var frontEndBackEndVal = parseInt($("#frontEndBackEnd option:selected").val());
-    // var typeCompanyText = $("#typeCompany option:selected").text();
-    // alert(typeCompanyText);
+    var typeCompanyText = $("#typeCompany option:selected").text();
     var typeCompanyVal = parseInt($("#typeCompany option:selected").val());
     var contentTypeVal = parseInt($("input:radio[name=contentType]:checked").val());
     var applicationTypeVal = parseInt($("input:radio[name=applicationType]:checked").val());
@@ -29,30 +27,38 @@ $(document).ready(function() {
       $(".question1").addClass("error");
     } else if (!introCompleteVal) {
       $(".question2").addClass("error");
-    } else if (!frontEndBackEndVal) {
+    } else if (frontEndBackEndText === "Choose one") {
       $(".question3").addClass("error");
-    } else if (!typeCompanyVal) {
+    } else if (typeCompanyText === "Choose one") {
       $(".question4").addClass("error");
     } else if (!contentTypeVal) {
       $(".question5").addClass("error");
     } else if (!applicationTypeVal) {
       $(".question6").addClass("error");
-    } else if (introCompleteVal < 1) {
-      $("#introToProgramming").show();
-    } else if (frontEndBackEndVal < 1) {
-      $("#cssDesign").show();
-    } else if (typeCompanyVal < 1) {
-      $("#rubyRails").show();
-    } else if (contentTypeVal < 1) {
-      $("#phpDrupal").show();
-    } else if (applicationTypeVal < 1) {
-      $("#javaAndroid").show();
-    } else if (applicationTypeVal === 1) {
-      $("#cNet").show();
     } else {
-      $("#mystery").show();
-    }
+      $(".question1").removeClass("error");
+      $(".question2").removeClass("error");
+      $(".question3").removeClass("error");
+      $(".question4").removeClass("error");
+      $(".question5").removeClass("error");
+      $(".question6").removeClass("error");
 
+      if (introCompleteVal < 2) {
+        $("#introToProgramming").show();
+      } else if (frontEndBackEndVal < 2) {
+        $("#cssDesign").show();
+      } else if (typeCompanyVal < 2) {
+        $("#rubyRails").show();
+      } else if (contentTypeVal < 2) {
+        $("#phpDrupal").show();
+      } else if (applicationTypeVal < 2) {
+        $("#javaAndroid").show();
+      } else if (applicationTypeVal === 2) {
+        $("#cNet").show();
+      } else {
+        $("#mystery").show();
+      }
+    }
 
 
   });
