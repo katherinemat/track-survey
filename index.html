@@ -19,7 +19,7 @@
         </div>
 
         <div class="form-group">
-          <label for="companyType">Are you more interested in front-end design or back-end development?</label>
+          <label for="frontEndBackEnd">Are you more interested in front-end design or back-end development?</label>
           <select class="form-control" id="frontEndBackEnd">
             <option value="0">Front-end design</option>
             <option value="1">Back-end development</option>
@@ -27,12 +27,29 @@
         </div>
 
         <div class="form-group">
-          <label for="companyType">What type of company do you want to work for?</label>
+          <label for="typeCompany">What type of company do you want to work for?</label>
           <select class="form-control" id="typeCompany">
             <option value="0">Smaller start-up</option>
             <option value="1">Established coorporation</option>
             <option value="2">It doesn't matter too much to me</option>
           </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contentType">Would you rather work on website content or applications?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="contentType" value="0">
+              Website content
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="contentType" value="1">
+              Applications
+            </label>
+          </div>
         </div>
 
         <button type="submit" class="btn">Submit</button>
