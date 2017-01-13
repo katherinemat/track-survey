@@ -12,21 +12,14 @@ $(document).ready(function() {
     $("#mystery").hide();
 
     var userName = $("input#name").val();
-
     // var frontEndBackEndText = $("#frontEndBackEnd option:selected").text();
     // alert(frontEndBackEndText);
-
     var introCompleteVal = parseInt($("input:radio[name=introComplete]:checked").val());
-
     var frontEndBackEndVal = parseInt($("#frontEndBackEnd option:selected").val());
-
     // var typeCompanyText = $("#typeCompany option:selected").text();
     // alert(typeCompanyText);
-
     var typeCompanyVal = parseInt($("#typeCompany option:selected").val());
-
     var contentTypeVal = parseInt($("input:radio[name=contentType]:checked").val());
-
     var applicationTypeVal = parseInt($("input:radio[name=applicationType]:checked").val());
 
     $(".userName").append(userName);
@@ -47,6 +40,8 @@ $(document).ready(function() {
     } else {
       $("#mystery").show();
     }
+
+    
 
   });
 });

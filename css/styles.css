@@ -1,31 +1,3 @@
-.results #surveyComplete {
-  display: none;
-}
-
-.results #introToProgramming {
-  display: none;
-}
-
-.results #rubyRails {
-  display: none;
-}
-
-.results #phpDrupal {
-  display: none;
-}
-
-.results #javaAndroid {
-  display: none;
-}
-
-.results #cssDesign {
-  display: none;
-}
-
-.results #cNet {
-  display: none;
-}
-
-.results #mystery {
+.results #surveyComplete, #introToProgramming, #rubyRails, #phpDrupal, #javaAndroid, #cssDesign, #cNet, #mystery {
   display: none;
 }
