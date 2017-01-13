@@ -26,7 +26,17 @@ $(document).ready(function() {
     $("#surveyComplete").show();
 
     if (!userName) {
-      $("body").addClass("error");
+      $(".question1").addClass("error");
+    } else if (!introCompleteVal) {
+      $(".question2").addClass("error");
+    } else if (!frontEndBackEndVal) {
+      $(".question3").addClass("error");
+    } else if (!typeCompanyVal) {
+      $(".question4").addClass("error");
+    } else if (!contentTypeVal) {
+      $(".question5").addClass("error");
+    } else if (!applicationTypeVal) {
+      $(".question6").addClass("error");
     } else if (introCompleteVal < 1) {
       $("#introToProgramming").show();
     } else if (frontEndBackEndVal < 1) {
