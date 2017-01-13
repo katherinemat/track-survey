@@ -9,6 +9,9 @@ $(document).ready(function() {
     // var frontEndBackEndText = $("#frontEndBackEnd option:selected").text();
     // alert(frontEndBackEndText);
 
+    var introCompleteVal = parseInt($("input:radio[name=introComplete]:checked").val());
+    alert(introCompleteVal);
+
     var frontEndBackEndVal = parseInt($("#frontEndBackEnd option:selected").val());
     alert(frontEndBackEndVal);
 
@@ -27,7 +30,9 @@ $(document).ready(function() {
     $(".userName").append(userName);
     $("#surveyComplete").show();
 
-    if (frontEndBackEndVal < 1) {
+    if (introCompleteVal < 1) {
+      $("#introToProgramming").show();
+    } else if (frontEndBackEndVal < 1) {
       $("#cssDesign").show();
     } else if (typeCompanyVal < 1) {
       $("#rubyRails").show();

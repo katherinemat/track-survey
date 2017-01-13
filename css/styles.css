@@ -2,6 +2,10 @@
   display: none;
 }
 
+.results #introToProgramming {
+  display: none;
+}
+
 .results #rubyRails {
   display: none;
 }

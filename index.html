@@ -19,6 +19,23 @@
         </div>
 
         <div class="form-group">
+          <label for="introComplete">Have you finished or are you currently enrolled in the Intro to Programming course offered by Epicodus?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="introComplete" value="0">
+              No
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="introComplete" value="1">
+              Yes
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
           <label for="frontEndBackEnd">Are you more interested in front-end design or back-end development?</label>
           <select class="form-control" id="frontEndBackEnd">
             <option value="0">Front-end design</option>
@@ -76,6 +93,11 @@
     <div class="results">
       <div id="surveyComplete">
         <p>Congratulations, <span class="userName"></span>! You're most suited to join the <span class="trackResult"></span> track.</p>
+      </div>
+
+      <div id="introToProgramming">
+        <h3>Intro to Programming</h3>
+        <p>The intro to programming course offered by Epicodus is a class covering the basics of HTML and CSS, Git, the command line, Markdown, JavaScript, jQuery, and Bootstrap. This course is offered both full-time and part-time. Check out Epicodus for a description of the <a href="https://www.epicodus.com/intro-to-programming/">Intro to Programming</a> course.</p>
       </div>
 
       <div id="rubyRails">
