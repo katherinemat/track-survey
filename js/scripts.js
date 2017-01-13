@@ -1,8 +1,7 @@
-
-
 $(document).ready(function() {
   $("form#learningPreferences").submit(function(event) {
     event.preventDefault();
+    // $(".results").hide();
 
     var userName = $("input#name").val();
 
@@ -10,22 +9,17 @@ $(document).ready(function() {
     // alert(frontEndBackEndText);
 
     var introCompleteVal = parseInt($("input:radio[name=introComplete]:checked").val());
-    alert(introCompleteVal);
 
     var frontEndBackEndVal = parseInt($("#frontEndBackEnd option:selected").val());
-    alert(frontEndBackEndVal);
 
     // var typeCompanyText = $("#typeCompany option:selected").text();
     // alert(typeCompanyText);
 
     var typeCompanyVal = parseInt($("#typeCompany option:selected").val());
-    alert(typeCompanyVal);
 
     var contentTypeVal = parseInt($("input:radio[name=contentType]:checked").val());
-    alert(contentTypeVal);
 
     var applicationTypeVal = parseInt($("input:radio[name=applicationType]:checked").val());
-    alert(applicationTypeVal);
 
     $(".userName").append(userName);
     $("#surveyComplete").show();
@@ -40,6 +34,8 @@ $(document).ready(function() {
       $("#phpDrupal").show();
     } else if (applicationTypeVal < 1) {
       $("#javaAndroid").show();
+    } else if (applicationTypeVal === 1) {
+      $("#cNet").show();
     } else {
       $("#mystery").show();
     }
