@@ -2,22 +2,22 @@
   display: none;
 }
 
-#rubyRails {
+.results #rubyRails {
   display: none;
 }
 
-#phpDrupal {
+.results #phpDrupal {
   display: none;
 }
 
-#javaAndroid {
+.results #javaAndroid {
   display: none;
 }
 
-#cssDesign {
+.results #cssDesign {
   display: none;
 }
 
-#cNet {
+.results #cNet {
   display: none;
 }
