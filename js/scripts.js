@@ -20,46 +20,25 @@ $(document).ready(function() {
     var contentTypeVal = parseInt($("input:radio[name=contentType]:checked").val());
     var applicationTypeVal = parseInt($("input:radio[name=applicationType]:checked").val());
 
-    $(".userName").append(userName);
-    $("#surveyComplete").show();
-
-    if (!userName) {
-      $(".question1").addClass("error");
-    } else if (!introCompleteVal) {
-      $(".question2").addClass("error");
-    } else if (frontEndBackEndText === "Choose one") {
-      $(".question3").addClass("error");
-    } else if (typeCompanyText === "Choose one") {
-      $(".question4").addClass("error");
-    } else if (!contentTypeVal) {
-      $(".question5").addClass("error");
-    } else if (!applicationTypeVal) {
-      $(".question6").addClass("error");
+    if (introCompleteVal < 2) {
+      $("#introToProgramming").show();
+    } else if (frontEndBackEndVal < 2) {
+      $("#cssDesign").show();
+    } else if (typeCompanyVal < 2) {
+      $("#rubyRails").show();
+    } else if (contentTypeVal < 2) {
+      $("#phpDrupal").show();
+    } else if (applicationTypeVal < 2) {
+      $("#javaAndroid").show();
+    } else if (applicationTypeVal === 2) {
+      $("#cNet").show();
     } else {
-      $(".question1").removeClass("error");
-      $(".question2").removeClass("error");
-      $(".question3").removeClass("error");
-      $(".question4").removeClass("error");
-      $(".question5").removeClass("error");
-      $(".question6").removeClass("error");
-
-      if (introCompleteVal < 2) {
-        $("#introToProgramming").show();
-      } else if (frontEndBackEndVal < 2) {
-        $("#cssDesign").show();
-      } else if (typeCompanyVal < 2) {
-        $("#rubyRails").show();
-      } else if (contentTypeVal < 2) {
-        $("#phpDrupal").show();
-      } else if (applicationTypeVal < 2) {
-        $("#javaAndroid").show();
-      } else if (applicationTypeVal === 2) {
-        $("#cNet").show();
-      } else {
-        $("#mystery").show();
-      }
+      $("#mystery").show();
     }
 
+    $(".userName").append(userName);
+    $("#surveyComplete").show();
+    $("body").addClass("completed")
 
   });
 });
