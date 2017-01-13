@@ -40,6 +40,8 @@ $(document).ready(function() {
       $("#phpDrupal").show();
     } else if (applicationTypeVal < 1) {
       $("#javaAndroid").show();
+    } else {
+      $("#mystery").show();
     }
 
   });
