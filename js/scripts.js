@@ -21,6 +21,9 @@ $(document).ready(function() {
     var contentTypeVal = parseInt($("input:radio[name=contentType]:checked").val());
     alert(contentTypeVal);
 
+    var applicationTypeVal = parseInt($("input:radio[name=applicationType]:checked").val());
+    alert(applicationTypeVal);
+
     $(".userName").append(userName);
     $("#surveyComplete").show();
 
@@ -30,6 +33,8 @@ $(document).ready(function() {
       $("#rubyRails").show();
     } else if (contentTypeVal < 1) {
       $("#phpDrupal").show();
+    } else if (applicationTypeVal < 1) {
+      $("#javaAndroid").show();
     }
 
   });
