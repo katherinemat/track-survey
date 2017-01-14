@@ -36,9 +36,9 @@ $(document).ready(function() {
       $("#mystery").show();
     }
 
-    $(".userName").append(userName);
+    $(".userName").text(userName);
     $("#surveyComplete").show();
-    $("body").addClass("completed")
+    $("body").addClass("completed");
 
   });
 });

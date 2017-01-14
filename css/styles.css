@@ -1,11 +1,38 @@
+#top {
+  /*background-color: rgba(255,255,255,0.6);*/
+  position: relative;
+  overflow: hidden;
+}
+
+#top h1 {
+  font-size: 100px;
+  font-family: 'Monoton', cursive;
+  padding: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+#top img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.container {
+  font-family: 'Padauk', sans-serif;
+}
+
 .results #surveyComplete, #introToProgramming, #rubyRails, #phpDrupal, #javaAndroid, #cssDesign, #cNet, #mystery {
   display: none;
 }
 
 .completed {
-  background-color: rgba(0,255,97,0.5);
+  background-color: rgba(67,183,112,0.3);
 }
 
-.error {
-  color: rgb(255, 16, 0);
+#moreInfo {
+  float: right;
 }

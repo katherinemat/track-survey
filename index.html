@@ -4,165 +4,173 @@
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Padauk" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Survey</title>
   </head>
-  <body class="container">
-    <h1 class="jumbotron">Course Direction Survey</h1>
-    <div id="survey">
-      <p>You've starting learning programming and now you're wondering which direction to focus your studies? Take the following survey to find out which Epicodus track to take. Answer these questions truthfully to get the best result. Change your answers around to see what direction the quiz takes you in!</p>
-      <form id="learningPreferences">
-        <div class="question1">
-          <div class="form-group">
-            <label for="name">What's your name?</label>
-            <input id="name" class="form-control" type="text" required>
-          </div>
-        </div>
-
-        <div class="question2">
-          <div class="form-group">
-            <label for="introComplete">Have you finished or are you currently enrolled in the Intro to Programming course offered by Epicodus?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" required name="introComplete" value="1">
-                No
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
-                <input type="radio" required name="introComplete" value="2">
-                Yes
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="question3">
-          <div class="form-group">
-            <label for="frontEndBackEnd">Are you more interested in front-end design or back-end development?</label>
-            <select required class="form-control" id="frontEndBackEnd">
-              <option value="" disabled selected>Choose one</option>
-              <option value="1">Front-end design</option>
-              <option value="2">Back-end development</option>
-              <option value="3">Doesn't matter too much to me</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="question4">
-          <div class="form-group">
-            <label for="typeCompany">What type of company do you want to work for?</label>
-            <select required class="form-control" id="typeCompany">
-              <option value="" disabled selected>Choose one</option>
-              <option value="1">Smaller start-up</option>
-              <option value="2">Established coorporation</option>
-              <option value="3">Doesn't matter too much to me</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="question5">
-          <div class="form-group">
-            <label for="contentType">Would you rather work on website content or applications?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" required name="contentType" value="1">
-                Website content
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
-                <input type="radio" required name="contentType" value="2">
-                Applications
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
-                <input type="radio" required name="contentType" value="3">
-                Doesn't matter too much to me
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="question6">
-          <div class="form-group">
-            <label for="applicationType">Which sounds more fun: designing a mobile app or organizing a database?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" required name="applicationType" value="1">
-                Designing a mobile app
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
-                <input type="radio" required name="applicationType" value="2">
-                Organizing a database
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
-                <input type="radio" required name="applicationType" value="3">
-                Doesn't matter too much to me
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <button type="submit" class="btn">Submit</button>
-      </form>
+  <body>
+    <div id="top">
+      <h1>Course Direction Survey</h1>
+      <img src="img/background.jpg">
     </div>
 
-    <div class="results">
-      <div id="surveyComplete">
-        <p>Congratulations, <span class="userName"></span>! You're most suited to join the follwing track(s):</p>
+    <div class="container">
+      <div id="survey">
+        <h4>You've starting learning programming and now you're wondering which direction to focus your studies? Take the following survey to find out which Epicodus track to take. Answer these questions truthfully to get the best result. Change your answers around to see what direction the quiz takes you in!</h4>
+        <img src="" alt="">
+        <form id="learningPreferences">
+          <div class="question1">
+            <div class="form-group">
+              <label for="name">What's your name?</label>
+              <input id="name" class="form-control" type="text" required placeholder="Enter your name here...">
+            </div>
+          </div>
+
+          <div class="question2">
+            <div class="form-group">
+              <label for="introComplete">Have you finished or are you currently enrolled in the Intro to Programming course offered by Epicodus?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="introComplete" value="1">
+                  No
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="introComplete" value="2">
+                  Yes
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question3">
+            <div class="form-group">
+              <label for="frontEndBackEnd">Are you more interested in front-end design or back-end development?</label>
+              <select required class="form-control" id="frontEndBackEnd">
+                <option value="" disabled selected>Choose one</option>
+                <option value="1">Front-end design</option>
+                <option value="2">Back-end development</option>
+                <option value="3">Doesn't matter too much to me</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="question4">
+            <div class="form-group">
+              <label for="typeCompany">What type of company do you want to work for?</label>
+              <select required class="form-control" id="typeCompany">
+                <option value="" disabled selected>Choose one</option>
+                <option value="1">Smaller start-up</option>
+                <option value="2">Established coorporation</option>
+                <option value="3">Doesn't matter too much to me</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="question5">
+            <div class="form-group">
+              <label for="contentType">Would you rather work on website content or applications?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="contentType" value="1">
+                  Website content
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="contentType" value="2">
+                  Applications
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="contentType" value="3">
+                  Doesn't matter too much to me
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question6">
+            <div class="form-group">
+              <label for="applicationType">Which sounds more fun: designing a mobile app or organizing a database?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="applicationType" value="1">
+                  Designing a mobile app
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="applicationType" value="2">
+                  Organizing a database
+                </label>
+              </div>
+
+              <div class="radio">
+                <label>
+                  <input type="radio" required name="applicationType" value="3">
+                  Doesn't matter too much to me
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
       </div>
 
-      <div id="introToProgramming">
-        <h3>Intro to Programming</h3>
-        <p>The intro to programming course offered by Epicodus is a class covering the basics of HTML and CSS, Git, the command line, Markdown, JavaScript, jQuery, and Bootstrap. This course is offered both full-time and part-time. Check out Epicodus for a description of the <a href="https://www.epicodus.com/intro-to-programming/">Intro to Programming</a> course.</p>
-      </div>
+      <div class="results">
+        <div id="surveyComplete">
+          <p>Congratulations, <span class="userName"></span>! You're most suited to join the follwing track(s):</p>
+        </div>
 
-      <div id="rubyRails">
-        <h3>Ruby/Rails</h3>
-        <p>Rails is a framework for Ruby, a general purpose programming language. Ruby and Ruby on Rails are intuitive, making it easier for companies to rapidly develop products. For this reason, startups love working with Ruby. One use of Ruby is in building interactive web applications. Check out Epicodus for a description of the <a href="https://www.epicodus.com/ruby">Ruby/Rails</a> course.</p>
-      </div>
+        <div id="introToProgramming">
+          <h3>Intro to Programming</h3>
+          <p>The intro to programming course offered by Epicodus is a class covering the basics of HTML and CSS, Git, the command line, Markdown, JavaScript, jQuery, and Bootstrap. This course is offered both full-time and part-time. Check out Epicodus for a description of the <a href="https://www.epicodus.com/intro-to-programming/">Intro to Programming</a> course.</p>
+        </div>
 
-      <div id="phpDrupal">
-        <h3>PHP/Drupal</h3>
-        <p>PHP now stands for Hypertext Pre-Processor. PHP works with html to generate lots of web content. If you want to build content-heavy websites with relatively little user interaction, this course is the right decision for you. There is a wide spectrum of places that need PHP programmers, from government websites to restaurant menus. PHP programmers will do things like collect form data and send and receive cookies. Check out Epicodus for a description of the <a href="https://www.epicodus.com/php">PHP/Drupal</a> course.</p>
-      </div>
+        <div id="rubyRails">
+          <h3>Ruby/Rails</h3>
+          <p>Rails is a framework for Ruby, a general purpose programming language. Ruby and Ruby on Rails are intuitive, making it easier for companies to rapidly develop products. For this reason, startups love working with Ruby. One use of Ruby is in building interactive web applications. Check out Epicodus for a description of the <a href="https://www.epicodus.com/ruby">Ruby/Rails</a> course.</p>
+        </div>
 
-      <div id="javaAndroid">
-        <h3>Java/Android</h3>
-        <blockquote class="blockquote-reverse">
-          <p>Java has staying power since it has long-term compatibility, which makes sure older applications continue to work now into the future. It’s not going anywhere anytime soon and is used to power company websites like LinkedIn.com, Netflix.com and Amazon.com.</p>
-          <footer><cite title="Source Title">http://www.codingdojo.com/blog/9-most-in-demand-programming-languages-of-2016/</cite></footer>
-        </blockquote>
-        <p>Java is a stable, in-demand language with two main functions: first is high performance applications and processing. Java is also used to develop Android apps and applets within larger webpages. Check out Epicodus for a description of the <a href="https://www.epicodus.com/java">Java/Android</a> course.</p>
-      </div>
+        <div id="phpDrupal">
+          <h3>PHP/Drupal</h3>
+          <p>PHP now stands for Hypertext Pre-Processor. PHP works with html to generate lots of web content. If you want to build content-heavy websites with relatively little user interaction, this course is the right decision for you. There is a wide spectrum of places that need PHP programmers, from government websites to restaurant menus. PHP programmers will do things like collect form data and send and receive cookies. Check out Epicodus for a description of the <a href="https://www.epicodus.com/php">PHP/Drupal</a> course.</p>
+        </div>
 
-      <div id="cssDesign">
-        <h3>CSS/Design</h3>
-        <p>CSS is responsible for styling webpages, making them easier to navigate, and more attractive to the user. It also is useful for making a webpage responsive to different size screens, so that users can easily look at content, whether they are using a phone or a desktop computer. The Design course comes after CSS and teaches very important concepts when it comes to the layout and look of a series of webpages. Designing a webpage using CSS and other tools happens with the creation and maintence of any webpage out there! Thus, web designers work in all fields. Check out Epicodus for a description of the <a href="https://www.epicodus.com/css">CSS</a> and <a href="https://www.epicodus.com/design">Design</a> courses.</p>
-      </div>
+        <div id="javaAndroid">
+          <h3>Java/Android</h3>
+          <blockquote class="blockquote-reverse">
+            <p>Java has staying power since it has long-term compatibility, which makes sure older applications continue to work now into the future. It’s not going anywhere anytime soon and is used to power company websites like LinkedIn.com, Netflix.com and Amazon.com.</p>
+            <footer><cite title="Source Title">http://www.codingdojo.com/blog/9-most-in-demand-programming-languages-of-2016/</cite></footer>
+          </blockquote>
+          <p>Java is a stable, in-demand language with two main functions: first is high performance applications and processing. Java is also used to develop Android apps and applets within larger webpages. Check out Epicodus for a description of the <a href="https://www.epicodus.com/java">Java/Android</a> course.</p>
+        </div>
 
-      <div id="cNet">
-        <h3>C#/.Net</h3>
-        <p>C# (pronounced c-sharp) works within the .net framework to build internal software such as database and client applications. Backed by Microsoft, C# is widely used among established businesses. It is also used to build Windows desktop apps. Check out Epicodus for a description of the <a href="https://www.epicodus.com/c-sharp">C#/.Net</a> course.</p>
-      </div>
+        <div id="cssDesign">
+          <h3>CSS/Design</h3>
+          <p>CSS is responsible for styling webpages, making them easier to navigate, and more attractive to the user. It also is useful for making a webpage responsive to different size screens, so that users can easily look at content, whether they are using a phone or a desktop computer. The Design course comes after CSS and teaches very important concepts when it comes to the layout and look of a series of webpages. Designing a webpage using CSS and other tools happens with the creation and maintence of any webpage out there! Thus, web designers work in all fields. Check out Epicodus for a description of the <a href="https://www.epicodus.com/css">CSS</a> and <a href="https://www.epicodus.com/design">Design</a> courses.</p>
+        </div>
 
-      <div id="mystery">
-        <h3>You're a mystery</h3>
-        <p>You're too amazing for us to decide which of our amazing courses you'll be best suited for. Check out <a href="https://www.epicodus.com/courses-overview/">Epicodus</a> for a description of all our courses.</p>
-      </div>
+        <div id="cNet">
+          <h3>C#/.Net</h3>
+          <p>C# (pronounced c-sharp) works within the .net framework to build internal software such as database and client applications. Backed by Microsoft, C# is widely used among established businesses. It is also used to build Windows desktop apps. Check out Epicodus for a description of the <a href="https://www.epicodus.com/c-sharp">C#/.Net</a> course.</p>
+        </div>
 
-      <p>For more information on choosing the right track for you, click <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here</a>.</p>
+        <div id="mystery">
+          <h3>You're a mystery</h3>
+          <p>You're too amazing for us to decide which of our amazing courses you'll be best suited for. Check out <a href="https://www.epicodus.com/courses-overview/">Epicodus</a> for a description of all our courses.</p>
+        </div>
+
+        <p id="moreInfo">For more information on choosing the right track for you, click <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here</a>.</p>
+      </div>
     </div>
   </body>
 </html>
