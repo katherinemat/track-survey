@@ -10,7 +10,7 @@ _This webpage allows users to take a quiz that considers the input for each ques
 
 ## Setup/Installation Requirements
 
-* _Clone repository from https://github.com/katherinemat/portfolio.git_
+* _Clone repository from https://github.com/katherinemat/track-survey.git_
 * _Double-click index.html to open this webpage in browser_
 * _Type in name, select options from drop-down menus, and click on options in radio lists_
 
